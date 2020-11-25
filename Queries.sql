@@ -2,9 +2,7 @@ use sqlexercises;
 
 select * from account_master;
 select * from customer_master;
-select * from loan_details;
-
-insert into loan_details(loan_id,customer_number,loan_status) values(6,1006,"Approved"),(7,1007,"Cancelled"),(8,1008,"Cancelled"); 
+select * from loan_details; 
 
 SELECT am.account_number,cm.customer_number,cm.firstname,cm.lastname,am.account_opening_date
 FROM customer_master cm INNER JOIN account_master am
